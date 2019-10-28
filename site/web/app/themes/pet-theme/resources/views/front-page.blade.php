@@ -1,4 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    @php echo "front page<br>\n"; @endphp
+    @include('partials.page-header')
+    {!! get_search_form(false) !!}
+    @include('partials.recently-added')
+    @php echo "footer menu<br>\n"; @endphp
 @endsection
